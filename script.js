@@ -32,7 +32,7 @@ addUserBtn.addEventListener("click", () =>{
         let objTag = document.createElement("div");
         objTag.id = "obj" + id;
         objTag.className = "obj";
-        objTag.innerHTML = `${id}.&nbsp;&nbsp;&nbsp;Name:${name}&nbsp;&nbsp;&nbsp;Profession:${profession}&nbsp;&nbsp;&nbsp;Age:${age}`;
+        objTag.innerHTML = `${id}. &nbsp;&nbsp;Name: ${name} ;\&nbsp;&nbsp;Profession: ${profession}&nbsp;&nbsp;Age: ${age}`;
 
         let deleteBtn = document.createElement("Button");
         deleteBtn.id = "btn" + id;
