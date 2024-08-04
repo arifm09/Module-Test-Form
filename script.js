@@ -11,9 +11,9 @@ addUserBtn.addEventListener("click", () =>{
     let name = name_box.value;
     let profession = profession_box.value;
     let age = age_box.value;
+    let message = document.getElementById("error-success");
 
     if(name=="" || profession=="" || age==""){
-        let message = document.getElementById("error-success");
         message.innerText = "Error : Please Make sure All details are filled before adding in an employee !"
         message.style.color = "red";
     }
@@ -32,7 +32,7 @@ addUserBtn.addEventListener("click", () =>{
         let objTag = document.createElement("div");
         objTag.id = "obj" + id;
         objTag.className = "obj";
-        objTag.innerHTML = `${id}. &nbsp;&nbsp;Name: ${name} ;\&nbsp;&nbsp;Profession: ${profession}&nbsp;&nbsp;Age: ${age}`;
+        objTag.innerHTML = `${id}. &nbsp;&nbsp;Name: ${name} ;\&nbsp;&nbsp;Profession: ${profession}&nbsp;&nbsp;Age:${age}`;
 
         let deleteBtn = document.createElement("Button");
         deleteBtn.id = "btn" + id;
@@ -47,6 +47,7 @@ addUserBtn.addEventListener("click", () =>{
 
             if(employeeSet.size===0){
                 emp0.innerText = "You have 0 Employees."
+                message.innerText = "";
             }
 
         })

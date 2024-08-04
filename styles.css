@@ -48,11 +48,12 @@ input{
     margin: 15px;
     border: 1px solid white;
     height: 28px;
-    width: 550px;
+    width: 500px;
     text-align: center;
     display: flex;
-    padding-left: 1px; 
+    padding-left: 2px; 
     padding-top: 2px;
+    border-radius: 10px;
 
 
 }
@@ -61,6 +62,7 @@ input{
     width: 50px;
     height: 20px;
     margin-left: 5px;
+    border-radius: 10px;
 }
 
 #employees{
@@ -73,3 +75,5 @@ input{
 #new-emp{
     margin-left: 25px;
 }
+
+
